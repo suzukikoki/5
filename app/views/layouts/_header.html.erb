@@ -54,4 +54,11 @@
       </div>
     </div>
   </nav>
+  
+<% if user_signed_in? %>
+  <div class="text-center", name="search_box">
+    <%= render 'searches/search' %>
+  </div>
+<% end %>
+  
 </header>
